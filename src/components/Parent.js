@@ -7,12 +7,13 @@ function Parent(){
     let [option, setOption] = useState("");
 
 
-    return <>
+    return <div className="parent">
+        <h1>Parent Component</h1>
          <Child1  setOption= {setOption}/>
          <Child2 setOption = {setOption}/>
 
          {option && <p>Selected Option: {option}</p>}
-    </>
+    </div>
 }
 
 export default Parent;
