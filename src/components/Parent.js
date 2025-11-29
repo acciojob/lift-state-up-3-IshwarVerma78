@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Child1 from "./Child1";
-import Child2 from "./Child2";
+import Child1 from "./Child1.js";
+import Child2 from "./Child2.js";
 
 function Parent(){
 
@@ -11,7 +11,7 @@ function Parent(){
          <Child1  setOption= {setOption}/>
          <Child2 setOption = {setOption}/>
 
-         {option && <h1>Selected Option: {option}</h1>}
+         {option && <p>Selected Option: {option}</p>}
     </>
 }
 
